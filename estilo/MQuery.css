@@ -1,6 +1,68 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 :root {
-    --roxo: #;
+    --roxo: #391faaee;
+    --branco: #fffffffd;
 }
 
+* {
+    font-family: "Rubik", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body, html {
+    background-color: var(--roxo);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    background-color: #fffffffd;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.527);
+
+    width: 250px;
+    height: 500px;
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    position: absolute;
+    display: block;
+
+
+    border-radius: 15px;
+
+    transition: width 0.5s, height 0.5s ;
+    transition-timing-function: ease-out;
+}
+
+section#login > div#image {
+    background: var(--roxo) url(../imagens/freepik__comic-art-graphic-novel-art-comic-illustration-hig__59102.png) no-repeat;
+    height: 250px;
+    background-size: cover;
+}
+
+section#login > div#form {
+    padding: 10px;
+    
+    display: block;
+}
+
+form {
+    padding: 10px 0px;
+
+}
