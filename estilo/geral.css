@@ -52,3 +52,9 @@ Telas Grandes: acima de 1200px
         height: 100%;
     }
 }
+
+@media screen and (min-width: 992px) {
+    #form > p {
+    font-size: 20px;
+}
+}

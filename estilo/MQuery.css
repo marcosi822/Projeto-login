@@ -7,6 +7,7 @@
 :root {
     --roxo: #391faaee;
     --branco: #fffffffd;
+    --verde-ciano: #2cb99b;
 }
 
 * {
@@ -34,9 +35,9 @@ section#login {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.527);
 
     width: 250px;
-    height: 500px;
+    height: 570px;
 
-    transform: translate(-50%, -50%);
+    
     top: 50%;
     left: 50%;
 
@@ -48,6 +49,8 @@ section#login {
 
     transition: width 0.5s, height 0.5s ;
     transition-timing-function: ease-out;
+    
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#image {
@@ -64,5 +67,97 @@ section#login > div#form {
 
 form {
     padding: 10px 0px;
+
+}
+
+#form {
+    padding: 10px;
+}
+
+#form > h1 {
+    text-align: center;
+}
+
+#form > p {
+    font-size: 12px;
+}
+
+div.campo > span {
+    color: #ffffff;
+
+
+    height: 100%;
+    width: 40px;
+    padding: 5px;
+    font-size: 32px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > input {
+    border-radius: 10px;
+
+
+    width: calc(100% - 44.5px);
+    height: 100%;
+    padding: 5px;
+
+    transform: translateY(-14px);
+}
+
+
+form > .campo {
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    
+    background-color: #3b209b;
+    border: 2px solid #3b209b;
+}
+
+form > input[type=submit] {
+    display: block;
+
+    font-size: 18px;
+    height: 45px;
+    width: 95%;
+    margin: 10px 0px;
+
+    border-radius: 10px;
+    border: none;
+    background-color: #2cb99b;
+    color: white;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+form > input[type=submit]:hover {
+    background-color: #3ba389;
+}
+
+form > a.botao {
+    display: block;
+    background-color: #38e0bc;
+
+    font-size: 18px;
+    height: 45px;
+    width: 95%;
+    margin: 10px 0px;
+    padding: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    color: #3ba389;
+
+
+    border-radius: 10px;
+    border: 2px solid #3ba389;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: ease-in 0.3s;
 
 }
